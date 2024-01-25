@@ -55,9 +55,15 @@
     height: 500px;
 } */
 
-.debug .companies{
+/* .debug .companies{
     height: 500px;
+    border: 1px solid black;
 }
+
+.debug .square{
+    border: 1px solid black;
+    height: 100%;
+} */
 
 /* #endregion Debug */
 
@@ -373,7 +379,80 @@ h4{
 .find-more{
     flex-direction: column;
     gap: 6rem;
+    margin-bottom: 6rem;
 }
 
 /* #endregion find-more */
 
+/* #region companies/squares */
+
+.square.left{
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 0;
+    gap: 0;
+
+    & img{
+        filter: invert(100%);
+    }
+
+    & > .up-left{
+        background-color: var(--drop-square-light);
+        box-shadow: inset 0px 0px 0px 10px rgba(255, 255, 255, 0.39);
+    }
+
+    & > .up-right{
+        background-color: var(--drop-square-danger-dark);
+    }
+
+    & > .bottom-left{
+        background-color: var(--drop-square-primary-light);
+    }
+
+    & > .bottom-right{
+        background-color: var(--drop-square-danger-light);
+    }
+}
+
+.company-logo{
+    width: 50%;
+    height: 50%;    
+    justify-content: center;
+    align-items: center;
+    aspect-ratio: 1/1;
+
+    & img{
+        width: 50%;
+        height: 50%;
+        object-fit: contain;
+    }
+}
+
+
+.square.right{
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 0;
+    gap: 0;
+
+    & img{
+        filter: invert(100%);
+    }
+
+    & > .up-left{
+        background-color: var(--drop-square-danger);
+    }
+
+    & > .up-right{
+        background-color: var(--drop-primary);
+    }
+
+    & > .bottom-left{
+        background-color: var(--drop-square-primary-dark);
+    }
+
+    & > .bottom-right{
+        background-color: var(--drop-square-accent);
+    }
+
+}
