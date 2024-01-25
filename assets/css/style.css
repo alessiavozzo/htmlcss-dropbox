@@ -65,6 +65,10 @@
     height: 100%;
 } */
 
+.debug #bottom_section{
+    height: 500px;
+}
+
 /* #endregion Debug */
 
 
@@ -456,3 +460,41 @@ h4{
     }
 
 }
+
+.square.center{
+    padding: 3rem;
+
+    & img{
+    width: 70%;
+    }
+}
+
+/* #endregion companies/squares */
+
+/* #region companies-bottom */
+.companies-bottom{
+    background-color: var(--drop-primary);
+
+    & .container-small.d-flex{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: baseline;
+        padding: 7rem 0;
+    }
+
+    & .btn{
+    background-color: var(--drop-lighter);
+    border: 1px solid var(--drop-dark);
+    color: var(--drop-dark);
+    padding: 0.5rem;
+    }
+    
+    & h2{
+        color: var(--drop-square-danger-dark);
+        font-size: 3rem;
+        width: 80%;
+    }
+}
+
+/* #endregion companies-bottom */
+
