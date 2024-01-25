@@ -37,9 +37,9 @@
     height: 700px;
 } */
 
-.debug .container-large{
+/* .debug .container-large{
     border: 1px solid black;
-}
+} */
 
 
 
@@ -55,16 +55,16 @@ li{
 }
 
 .container-large{
-    width: 80%;
+    width: 75%;
     margin: auto;
-    height: 100%;
 }
 
 h1{
-    font-size: 2.5rem;
-    text-align: center;
+    font-size: 5.7rem;
+    font-weight: 900;
 }
 
+/* #endregion Common */
 
 /* #region Utility */
 
@@ -94,11 +94,15 @@ h1{
     width: calc((100% / 12) * 9);
 }
 
+
+
+/* #endregion Utility */
+
 /* #region Header */
 
 #site_header{
     max-width: 2000px;
-    font-size: 0.9rem;
+    font-size: 1.3rem;
     
     & .link{
         text-decoration: none;
@@ -124,16 +128,51 @@ nav{
 /* #region Jumbo */
 
 .jumbotron{
-    background-color: var(--drop-primary);   
+    background-color: var(--drop-primary); 
+    padding-top: 5rem;
+    padding-bottom: 1.5rem;  
     
     & .col-9{
-        margin-bottom: -5rem;
+        margin-bottom: -8rem;
     }
     
     & img{
-        width: 110%;
+        width: 100%;
     }
 }
 
+.banner{
+    padding-top: 3.5rem;
 
+    & .free-trial{
+        font-size: 1.4rem;
+        line-height: 1.4rem;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-bottom: 1.5rem;
+        
+    }
+}
 
+.click-me{
+    flex-direction: column;
+    gap: 3rem;
+    width: 75%;
+    font-size: 1.2rem;
+
+    & > .btn{
+        padding: 1rem;
+    }
+
+    & > .link{
+        text-decoration: none;
+        color: var(--drop-darker);
+    }
+
+}
+
+.actions > i{
+    font-size: 4rem;
+}
+
+/* #endregion Jumbo */
