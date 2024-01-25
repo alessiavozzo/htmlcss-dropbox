@@ -42,14 +42,14 @@
     border: 1px solid black;
 } */
 
-.debug .business-plans{
+/* .debug .business-plans{
     height: 1600px;
 }
 
 .debug .container-small{
     border: 1px solid black;
     height: 1600px;
-}
+} */
 
 /* .debug .card-plan{
     height: 500px;
@@ -226,10 +226,14 @@ nav{
     }
 }
 
+.offer{
+    gap: 4rem;
+}
 
 
 
 /* #region Card */
+
 
 .card-plan{
     border: 1px solid var(--drop-dark);
@@ -248,12 +252,18 @@ nav{
 
 .bottom-card{
     flex-direction: column;
-    padding: 1rem;
-    gap: 2rem;
+    padding: 2rem;
+    padding-bottom: 5rem;
+    gap: 2.3rem;
 
     & ul{
         flex-direction: column;
         gap: 1rem;
+
+        & li{
+            gap: 0.5rem;
+            align-items: baseline;
+        }
     }
 }
 
@@ -265,3 +275,36 @@ nav{
     color: var(--drop-dark);
 }
 
+.try-or-buy .btn{
+    text-align: center;
+}
+
+hr{
+    color: var(--drop-dark);
+    width: 25%;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+h4{
+    padding-bottom: 1rem;
+}
+
+.fa-check{
+    color: var(--drop-btn);
+}
+
+/* #endregion Card */
+
+/* Card-in-line */
+
+.card-plan.col-12{
+    margin-top: 5rem;
+}
+
+.bottom-card.in-line{
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* #endregion business-plan */
