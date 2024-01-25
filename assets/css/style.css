@@ -313,7 +313,6 @@ nav{
 
 .price span:nth-of-type(2){
     color: var(--drop-dark);
-    padding-top: 2rem;
 }
 
 .try-or-buy .btn{
@@ -346,6 +345,11 @@ h4{
 .bottom-card.in-line{
     flex-direction: row;
     justify-content: space-between;
+    align-items: baseline;
+
+    & span:nth-last-of-type(1){        
+    padding-top: 2rem;
+    }
 }
 
 /* #endregion Card-in-line */
@@ -554,6 +558,7 @@ h4{
 
 /* #region site_footer */
 
+
 #site_footer{
     background-color: var(--drop-darker);    
     font-size: 1.3rem;
@@ -602,3 +607,4 @@ h4{
 }
 
 /* #endregion site_footer */
+
