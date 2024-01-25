@@ -1,0 +1,35 @@
+/* #region reset */
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* #endregion reset */
+
+/* #region Color Palette */
+:root{
+    --drop-lighter: rgba(255, 255, 255, 1);
+    --drop-light:rgba(245, 245, 245, 1);
+    --drop-darker: black;
+    --drop-primary: rgba(180, 208, 231, 1);
+    --drop-btn: rgba(0, 97, 255, 1);
+    --drop-square-danger: rgba(213, 0, 31, 1);
+    --drop-square-danger-light: rgba(255, 28, 28, 1);
+    --drop-square-danger-dark: rgba(97, 8, 43, 1);
+    --drop-square-primary-dark: rgba(13, 36, 129, 1);
+    --drop-square-primary-light: rgba(0, 147, 206, 1);
+    --drop-square-accent: rgba(255, 216, 48, 1);
+    --drop-square-light: rgba(162, 211, 155, 1);
+}
+
+/* #endregion Color Palette */
+
+
+
+/* #region Common */
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
