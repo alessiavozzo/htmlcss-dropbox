@@ -65,10 +65,14 @@
     height: 100%;
 } */
 
-.debug #bottom_section{
+/* .debug #bottom_section{
     height: 500px;
-}
+}  */
 
+/* .debug #site_footer{
+    height: 700px;
+}
+  */
 /* #endregion Debug */
 
 
@@ -498,3 +502,73 @@ h4{
 
 /* #endregion companies-bottom */
 
+/* #region faq */
+
+.faq h2{
+    padding-bottom: 4.5rem;
+}
+
+.faq .container-small{
+    padding-bottom: 10rem;
+}
+
+.questions{
+    font-size: 1.3rem;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 0;
+    border-top: 1px solid var(--drop-dark);
+    border-bottom: 1px solid var(--drop-dark);
+}
+
+/* #endregion faq */
+
+/* #region site_footer */
+
+#site_footer{
+    background-color: var(--drop-darker);    
+    font-size: 1.3rem;
+
+    & h4{
+        font-size: 2rem;
+        color: var(--drop-light);
+    }
+
+    & li{
+        padding: 0.7rem 0;
+    }
+
+    & a{
+        color: var(--drop-light);
+        text-decoration: none;
+    }
+
+    & hr{
+        width: 10%;
+        margin-bottom: 2rem;
+    }
+}
+
+.footer-top{
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+    padding: 7rem 0;
+}
+
+.about-us{
+    width: calc(100% / 5);
+}
+
+.footer-bottom{
+    padding: 4rem 0;
+}
+
+.language{
+    color: var(--drop-light);
+    align-items: center;
+    gap: 1rem;
+}
