@@ -42,14 +42,14 @@
     border: 1px solid black;
 } */
 
-/* .debug .business-plans{
+.debug .business-plans{
     height: 1600px;
 }
 
 .debug .container-small{
     border: 1px solid black;
     height: 1600px;
-} */
+}
 
 /* .debug .card-plan{
     height: 500px;
@@ -117,6 +117,10 @@ h3{
 
 .col-4{
     width: calc((100% / 12) * 4);
+}
+
+.col-8{
+    width: calc((100% / 12) * 8);
 }
 
 .col-9{
@@ -308,3 +312,32 @@ h4{
 }
 
 /* #endregion business-plan */
+
+
+/* #region partner */
+
+.partnership{
+    gap: 3rem;
+
+    & img{
+    width: 100%;
+    }
+
+    & .btn{
+    background-color: var(--drop-lighter);
+    border: 1px solid var(--drop-dark);
+    color: var(--drop-dark);
+    width: 40%;
+    padding: 0.5rem;
+    }  
+}
+    
+
+.col-4.d-flex{
+    flex-direction: column;
+    gap: 2rem;
+    padding-top: 3rem;
+}
+
+/* #endregion partner */
+
