@@ -33,7 +33,9 @@
     background-color: aqua;
 }
 
-
+.debug .jumbotron{
+    height: 500px;
+}
 
 
 
@@ -93,5 +95,9 @@ nav{
 
 /* #endregion Header */
 
+/* #region Jumbo */
 
+.jumbotron{
+    background-color: var(--drop-primary);
+}
 
