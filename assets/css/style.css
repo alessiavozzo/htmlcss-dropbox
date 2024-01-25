@@ -26,6 +26,17 @@
 
 /* #endregion Color Palette */
 
+/* #region Debug */
+
+.debug #site_header{
+    height: 50px;
+    background-color: aqua;
+}
+
+
+
+
+
 
 
 /* #region Common */
@@ -33,3 +44,54 @@
 body{
     font-family: 'Open Sans', sans-serif;
 }
+
+li{
+    list-style: none;
+}
+
+
+
+
+
+/* #region Utility */
+
+.d-flex{
+    display: flex;
+}
+
+.list-inline{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+
+/* #region Header */
+
+#site_header{
+    max-width: 2000px;
+    font-size: 0.9rem;
+    
+    & .link{
+        text-decoration: none;
+        color: var(--drop-darker);
+    }
+}
+
+nav{
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.btn{
+    background-color: var(--drop-btn);
+    padding: 0.2rem 0.5rem;
+    color: var(--drop-lighter);
+    text-decoration: none;
+}
+
+/* #endregion Header */
+
+
+
