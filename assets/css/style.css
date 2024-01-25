@@ -41,7 +41,7 @@
 /* .debug .container-large{
     border: 1px solid black;
 } */
-
+/* 
 .debug .business-plans{
     height: 1600px;
 }
@@ -49,11 +49,15 @@
 .debug .container-small{
     border: 1px solid black;
     height: 1600px;
-}
+} */
 
 /* .debug .card-plan{
     height: 500px;
 } */
+
+.debug .companies{
+    height: 500px;
+}
 
 /* #endregion Debug */
 
@@ -340,4 +344,36 @@ h4{
 }
 
 /* #endregion partner */
+
+/* #region features */
+
+.row{
+    gap: 4rem;
+    padding-bottom: 4rem;
+}
+
+.feature-card{
+    flex-direction: column;
+    gap: 2rem;
+
+    & img{
+        width: 100%;
+    }
+
+    & .feature-bottom{
+        flex-direction: column;
+        gap: 2rem;
+    }
+}
+
+/* #endregion features */
+
+/* #region find-more */
+
+.find-more{
+    flex-direction: column;
+    gap: 6rem;
+}
+
+/* #endregion find-more */
 
