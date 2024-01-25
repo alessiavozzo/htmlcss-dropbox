@@ -28,15 +28,18 @@
 
 /* #region Debug */
 
-.debug #site_header{
+/* .debug #site_header{
     height: 50px;
     background-color: aqua;
-}
+} */
 
-.debug .jumbotron{
-    height: 500px;
-}
+/* .debug .jumbotron{
+    height: 700px;
+} */
 
+.debug .container-large{
+    border: 1px solid black;
+}
 
 
 
@@ -51,8 +54,16 @@ li{
     list-style: none;
 }
 
+.container-large{
+    width: 80%;
+    margin: auto;
+    height: 100%;
+}
 
-
+h1{
+    font-size: 2.5rem;
+    text-align: center;
+}
 
 
 /* #region Utility */
@@ -67,6 +78,21 @@ li{
     align-items: center;
 }
 
+.col-12{
+    width: 100%;
+}
+
+.col-3{
+    width: calc((100% / 12) * 3);
+}
+
+.col-4{
+    width: calc((100% / 12) * 4);
+}
+
+.col-9{
+    width: calc((100% / 12) * 9);
+}
 
 /* #region Header */
 
@@ -98,6 +124,16 @@ nav{
 /* #region Jumbo */
 
 .jumbotron{
-    background-color: var(--drop-primary);
+    background-color: var(--drop-primary);   
+    
+    & .col-9{
+        margin-bottom: -5rem;
+    }
+    
+    & img{
+        width: 110%;
+    }
 }
+
+
 
