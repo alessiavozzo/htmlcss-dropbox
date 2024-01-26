@@ -11,10 +11,20 @@
 
 /* #region debug */
 
-/* #site_header{
+/* .debug #site_header{
     height: 100px;
     background-color: aqua;
 } */
+
+.debug .container-large{
+    height: 800px;
+    background-color: aquamarine;
+}
+
+.debug .container-small{
+    height: 500px;
+    border: 1px solid black;
+}
 
 /* #region color palette */
 :root {
@@ -35,6 +45,20 @@ body{
     height: 100vh;
 }
 
+.container-wrap{
+    width: 100%;
+}
+
+.container-large{
+    width: 70%;
+    margin: auto;
+}
+
+.container-small{
+    width: calc(100% / 3);
+    margin: auto;
+    flex-direction: column;
+}
 
 /* #region Utility */
 
@@ -47,6 +71,7 @@ body{
 #site_header{
     border-bottom: 1px solid var(--drop-dark);
     height: 6%;
+    max-width: 2000px;
 }
 nav{
     font-size: 1.3rem;
@@ -85,3 +110,9 @@ nav{
 }
 
 /* #endregion Header */
+
+
+/* #region main */
+.card-top, .login, form{
+    flex-direction: column;
+}
