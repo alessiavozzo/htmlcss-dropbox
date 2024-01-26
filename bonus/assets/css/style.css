@@ -78,6 +78,10 @@
 
 /* #region Common */
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     font-family: 'Open Sans', sans-serif;
 }
@@ -229,6 +233,14 @@ nav{
 .actions > i{
     font-size: 4rem;
     padding-top: 4rem;
+}
+
+i.fa-arrow-down{
+    color: var(--drop-darker);
+    
+    &:hover{
+        color: var(--drop-btn);
+    }
 }
 
 /* #endregion Jumbo */
