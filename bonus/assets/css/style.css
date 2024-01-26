@@ -169,6 +169,7 @@ h3 {
     & .link {
         text-decoration: none;
         color: var(--drop-darker);
+        padding: 1.9rem 0.3rem;
     }
 }
 
@@ -624,17 +625,58 @@ h4 {
 
 
 
+/* BONUS */
+
+/* #region dropdown menu */
+
 .d-menu {
     position: relative;
 
     & .dropdown {
         position: absolute;
-        background-color: #da0b0b;
+        background-color: var(--drop-light);
         z-index: 10;
+        width: 170%;
+        top: 3.7rem;
+        padding: 0.3rem;
         display: none;
+
+        & li{
+            padding: 0.5rem 0;
+
+            & a{
+                text-decoration: none;
+                color: var(--drop-darker);
+            }
+        }
     }
+}
+
+nav .link:hover{
+    background-color: var(--drop-light);
 }
 
 .d-menu:hover .dropdown{
     display: block;
 }
+
+.dropdown li:hover{
+    background-color: rgba(119, 136, 153, 0.527);
+    cursor: pointer;
+
+    & a{
+    color: var(--drop-lighter);
+    }
+}
+
+
+.navbar-right .dropdown {
+    width: 130%;
+    right: 0;
+    padding: 0.3rem;
+    display: none;
+}
+
+/* #endregion dropdown menu */
+
+/*  */
