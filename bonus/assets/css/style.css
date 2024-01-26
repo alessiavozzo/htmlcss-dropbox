@@ -682,4 +682,29 @@ nav .link:hover{
 /* accordion */
 
 
+.quest input{
+    position: absolute;
+    opacity: 0;
+}
 
+label{
+    justify-content: space-between;
+    padding: 1rem;
+    display: flex;
+    color: white;
+    background-color: blue;
+    cursor: pointer;
+}
+
+label::after{
+    content: '•';
+}
+
+.answer{
+    overflow: hidden;
+    height: 0;
+}
+
+.quest input:checked ~ .answer{
+    height: 5rem;
+}
