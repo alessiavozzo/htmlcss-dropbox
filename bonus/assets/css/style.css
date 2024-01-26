@@ -679,32 +679,53 @@ nav .link:hover{
 
 /* #endregion dropdown menu */
 
-/* accordion */
+/* #region accordion */
 
 
-.quest input{
+.question input{
     position: absolute;
     opacity: 0;
 }
 
 label{
     justify-content: space-between;
-    padding: 1rem;
-    display: flex;
-    color: white;
-    background-color: blue;
+    align-items: center;
+    color: var(--drop-darker);
     cursor: pointer;
+    font-size: 1.3rem;
+    font-weight: 700;
+    padding: 3rem 0.3rem;
+    border-top: 1px solid var(--drop-dark);
+    border-bottom: 1px solid var(--drop-dark);
+
+    &::after{
+        content: '\276F';
+    }
 }
 
-label::after{
-    content: '•';
+.question:hover{
+    background-color: rgba(119, 136, 153, 0.274);
 }
 
 .answer{
     overflow: hidden;
     height: 0;
+    background-color: var(--drop-lighter);
+
+    & p{
+        padding: 1.5rem 0;
+    }
 }
 
-.quest input:checked ~ .answer{
-    height: 5rem;
+.question input:checked ~ .answer{
+    height: auto;
+    max-height: 10rem;  
+     
 }
+
+.question input:checked ~ label::after{
+    transform: rotate(90deg);
+    transition: all 0.5s;
+}
+
+/* #endregion accordion */
