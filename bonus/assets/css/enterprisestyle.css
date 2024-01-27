@@ -1,0 +1,43 @@
+/* #region reset */
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* #endregion reset */
+
+/* #region color palette */
+
+:root{
+    --drop-darker: rgba(0, 0, 0, 1);
+    --drop-dark: rgba(30, 25, 25, 1);
+    --drop-lighter: rgba(255, 255, 255, 1);
+    --drop-light: rgba(247, 245, 242, 1);
+    --drop-btn: rgba(0, 97, 254, 1);
+    --drop-faded-btn: rgba(57, 132, 255, 1);
+    --drop-accent: rgba(255, 140, 25, 1);
+    --drop-brand-logo: rgba(180, 220, 25, 1);
+}
+
+/* #endregion color palette */
+
+/* #region common rules */
+
+
+/* #region utility */
+
+.col-3{
+    width: calc((100% / 12) * 3);
+}
+
+.col-4{
+    width: calc((100% / 12) * 4);
+}
+
+.d-flex{
+    display: flex;
+}
+
+/* #endregion utility */
