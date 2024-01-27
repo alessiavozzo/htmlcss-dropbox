@@ -559,15 +559,6 @@ h4 {
     padding-bottom: 10rem;
 }
 
-.questions {
-    font-size: 1.3rem;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 3rem 0;
-    border-top: 1px solid var(--drop-dark);
-    border-bottom: 1px solid var(--drop-dark);
-}
 
 /* #endregion faq */
 
@@ -679,7 +670,7 @@ nav .link:hover{
 
 /* #endregion dropdown menu */
 
-/* #region accordion */
+/* #region accordion on click */
 
 
 .question input{
@@ -728,4 +719,82 @@ label{
     transition: all 0.5s;
 }
 
+
+.question.close > label{
+    justify-content: end;
+    padding: 0.5rem 0;
+    border: none;
+
+    &::after{
+        content: none;
+    }
+
+    &:hover{
+        background-color: var(--drop-lighter);
+    }
+}
 /* #endregion accordion */
+
+/* #region accordion on hover */
+
+.question-text{
+    justify-content: space-between;
+    align-items: center;
+    color: var(--drop-darker);
+    cursor: pointer;
+    font-size: 1.3rem;
+    font-weight: 700;
+    padding: 3rem 0.3rem;
+    border-top: 1px solid var(--drop-btn);
+    border-bottom: 1px solid var(--drop-btn);
+
+    &::after{
+        content: '\276F';
+    }
+    
+}
+
+.question-text:hover{
+    background-color: var(--drop-primary);
+
+    &::after{
+        transform: rotate(90deg);
+        color: var(--drop-btn);
+        transition: 0.3s;
+    }
+}
+
+.answer-content > p{
+    padding: 1.5rem 0;
+}
+
+.accordion-hov:hover .quest:hover .answer-content, .accordion .answer-content{
+    height: 8rem;
+}
+
+.answer-content, .accordion:hover .answer-content{
+    overflow: hidden;
+    height: 0;
+    transition: height 0.5s;
+}
+
+/* #endregion accordion on hover */
+
+/* #region scrollbar */
+
+::-webkit-scrollbar {
+    width: 1rem;
+}
+  
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px var(--drop-primary); 
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--drop-btn); 
+    border-radius: 5px;
+    box-shadow: inset 0 0 7px var(--drop-lighter)
+  }
+
+  /* #endregion scrollbar */

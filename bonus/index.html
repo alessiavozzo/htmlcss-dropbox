@@ -689,7 +689,18 @@
                     
                     
                     <!-- I could've done this with <details> tag but I liked the mutually exclusiveness better -->
-                       
+                    
+                    <!-- accordion on click -->    
+
+                    <!-- question-close -->
+                    <div class="question close">
+
+                        <input type="radio" name="faqs" id="q4">
+                        <label for="q4" class="d-flex">
+                            <i class="fa-solid fa-x"></i>
+                        </label>
+                
+                    </div> 
                         
                     <!-- question1 -->
                     <div class="question">
@@ -719,21 +730,28 @@
                 
                     </div>
 
-                    <!-- question3 -->
-                    <div class="question">
+                    
 
-                        <input type="radio" name="faqs" id="q3">
-                        <label for="q3" class="d-flex">Qual è la differenza tra Dropbox Business Standard e Dropbox Business Advanced?
-
-                        </label>
-
-                        <div class="answer">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit magni autem voluptas officiis. Molestias dolorum ratione iure nemo dolore eos?Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, dolor.</p>
+                    <!-- accordion on hover -->
+                    <div class="accordion-hov">
+                        
+                        <!-- q1 -->
+                        <div class="quest">
+                            <div class="question-text d-flex">Qual è la differenza tra Dropbox Business Standard e Dropbox Business Advanced?</div>
+                            <div class="answer-content">
+                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit magni autem voluptas officiis. Molestias dolorum ratione iure nemo dolore eos?Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, dolor.</p>
+                            </div>
                         </div>
+
+                        <!-- q2 -->
+                        <div class="quest">
+                            <div class="question-text d-flex">Qual è la differenza tra Dropbox Business Standard e Dropbox Business Advanced?</div>
+                            <div class="answer-content">
+                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit magni autem voluptas officiis. Molestias dolorum ratione iure nemo dolore eos?Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, dolor.</p>
+                            </div>
+                        </div>   
                 
-                    </div>                   
-
-
+                    </div>   
                 </div>
             </div>
         </section>
