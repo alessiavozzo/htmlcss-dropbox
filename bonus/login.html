@@ -45,43 +45,53 @@
                 <div class="container-small card d-flex">
 
                     <!-- Card -->
+                    <!-- top -->
                     <div class="card-top d-flex">
                         <h2>Accedi o registrati</h2>
-                        
+
                         <div class="login d-flex">
                             <!-- login google -->
-                            <div class="login-google">
-                                <span>logo</span>
-                                <span>testotesto</span>
+                            <div class="login-google d-flex">
+                                <div class="g-logo d-flex">
+                                    <i class="fa-brands fa-google"></i>
+                                </div>
+                                <span>Continua con Google</span>
                             </div>
 
                             <!-- login apple -->
-                            <div class="login-apple">
-                                <span>logo</span>
-                                <span>testotesto</span>
+
+                            <div class="login-apple d-flex">
+                                <div class="a-logo d-flex">
+                                    <i class="fa-brands fa-apple"></i>
+                                </div>
+                                <span>Continua con Apple</span>
                             </div>
 
                         </div>
-                        
+
                     </div>
 
-                    <hr>
+                    <div class="separator d-flex">
+                        <hr>
+                        <span>oppure</span>
+                        <hr>
+                    </div>
 
+                    <!-- bottom -->
                     <div class="card-bottom">
-                        
+
                         <form class="d-flex" action="">
                             <label for="email">Indirizzo email</label>
 
                             <input type="email" id="email" required placeholder="Inserisci qui la tua email">
 
                             <input type="submit" value="Continua">
-                            
+
                         </form>
                     </div>
 
                 </div>
             </div>
-        </div>
 
 
 
@@ -90,7 +100,39 @@
 
 
     <!-- /#site_footer -->
-    <footer id="site_footer"></footer>
+    <footer id="site_footer">
+        <div class="container-large d-flex">
+
+            <!-- top -->
+            <div class="footer-top">
+                <ul class="list-inline">
+                    <li>
+                        <a href="#" target="_blank" class="link">Privacy e Termini</a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank" class="link">Norme sui cookie</a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank" class="link">Preferenze cookie e CCPA</a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank" class="link">Principi sull'intelligenza artificiale</a>
+                    </li>
+                </ul>
+            </div>
+            
+            <hr>
+
+            <div class="footer-bottom">
+                <div class="language d-flex">
+                    <i class="fa-solid fa-globe"></i>
+                    <span>Italiano</span>
+                    <i class="fa-solid fa-angle-right fa-sm"></i>
+                </div>
+            </div>
+
+        </div>
+    </footer>
 
 </body>
 

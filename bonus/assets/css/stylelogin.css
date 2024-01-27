@@ -1,7 +1,6 @@
-
 /* #region Reset */
 
-*{
+* {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
@@ -16,15 +15,20 @@
     background-color: aqua;
 } */
 
-.debug .container-large{
+/* .debug .container-large{
     height: 800px;
     background-color: aquamarine;
 }
+ */
+/* .debug .container-small {
 
-.debug .container-small{
-    height: 500px;
     border: 1px solid black;
 }
+ */
+
+
+ /* #endregion debug */
+
 
 /* #region color palette */
 :root {
@@ -41,71 +45,91 @@
 
 /* #region Common */
 
-body{
+body {
     height: 100vh;
+    font-size: 1.1rem;
 }
 
-.container-wrap{
+.container-wrap {
     width: 100%;
 }
 
-.container-large{
-    width: 70%;
+.container-large {
+    width: 65%;
     margin: auto;
+    padding: 5rem 0;
 }
 
-.container-small{
-    width: calc(100% / 3);
+.container-small {
+    width: 30%;
     margin: auto;
     flex-direction: column;
+    gap: 1.5rem;
 }
+
+/* #endregion Common */
 
 /* #region Utility */
 
-.d-flex{
+.d-flex {
     display: flex;
 }
 
+.list-inline {
+    display: flex;
+    gap: 1.7rem;
+    align-items: center;
+    list-style: none;
+
+    & a{
+        text-decoration: none;
+        color: var(--drop-darker);
+    }
+}
+
+/* #endregion Utility */
+
 /* #region Header */
 
-#site_header{
+#site_header {
     border-bottom: 1px solid var(--drop-dark);
     height: 6%;
     max-width: 2000px;
 }
-nav{
+
+nav {
     font-size: 1.3rem;
     height: 100%;
     justify-content: space-between;
     align-items: center;
 
-    & .logo-svg{
-        z-index: 10;        
+    & .logo-svg {
+        z-index: 10;
         background-color: var(--drop-btn);
         align-items: center;
         aspect-ratio: 1/1;
         justify-content: center;
     }
-    
-    & button{
+
+    & button {
         border: none;
         background-color: var(--drop-lighter);
         font-size: 1rem;
         padding: 1rem;
 
-        &:hover{
+        &:hover {
             background-color: var(--drop-dark);
             cursor: pointer;
         }
     }
 }
 
-.nav-left{
-    height: 100%;    
+.nav-left {
+    height: 100%;
 
-    & .logo-img{
-       margin-left: -17%;
-       align-self: center;
+    & .logo-img {
+        margin-left: -17%;
+        align-self: center;
     }
 }
 
@@ -113,6 +137,145 @@ nav{
 
 
 /* #region main */
-.card-top, .login, form{
+
+
+/* top */
+
+.card-top, .login, form {
     flex-direction: column;
+}
+
+.card-top {
+    gap: 1rem;
+
+    & .login {
+        gap: 1rem;
+    }
+}
+
+h2 {
+    font-size: 1.8rem;
+}
+
+.card-top i {
+    object-fit: contain;
+    flex-grow: 1;
+    font-size: 2rem;
+}
+
+.login span {
+    flex-grow: 2;
+    text-align: center;
+    align-self: center;
+}
+
+.g-logo i {
+    font-size: 1.6rem;
+}
+
+.login > div {
+    border: 1px solid var(--drop-dark);
+    padding: 0.5rem;
+}
+
+.login-google{
+    border-radius: 0.5rem;
+
+    &:hover{
+        background-color: rgba(202, 227, 248, 0.329);
+        cursor: pointer;
+        border: 1px solid rgba(202, 227, 248, 0.897);
+    }
+}
+
+.login-apple:hover{
+    background-color: rgba(177, 173, 173, 0.411);
+    cursor: pointer;
+    border: 1px solid  rgba(177, 173, 173, 0.747);
+}
+
+/* sep */
+
+.separator{
+    text-align: center;
+    width: 100%;
+
+    & span{
+        width: 26%;
+    }
+}
+    
+hr{
+    display: inline-block;
+    width: 37%;
+    height: 0;
+    margin-top: 0.6rem;
+}
+
+/* bottom */
+
+form{
+    gap: 0.5rem;
+}
+
+label{
+    font-size: 0.9rem;
+    color: var(--drop-dark);
+}
+
+input[type="email"]{
+    padding: 1rem 0.5rem;
+    border: 1px solid var(--drop-dark);
+    outline: none;
+    transition: 0.5s;
+    margin-bottom: 1.3rem;
+
+    &:hover{
+        border: 1px solid var(--drop-darker);
+    }
+
+    &:focus{
+        box-shadow: 0px 0px 0 2px rgba(0, 97, 255, 1);
+    }
+}
+
+input[type="submit"]{
+    padding: 1rem;
+    color: var(--drop-lighter);
+    background-color: var(--drop-btn);
+    border: none;
+
+    &:hover{
+        cursor: pointer;
+        background-color: rgb(4, 89, 226) ;
+    }
+}
+
+/* #endregion main */
+
+
+/* #region footer */
+#site_footer{
+    padding-top: 3rem;
+
+    & a:hover{  
+        text-decoration: underline;
+    }
+
+    & .container-large{
+        flex-direction: column;
+    }
+}
+
+#site_footer hr{
+    margin-top: 2.25rem;
+    margin-bottom: 2.25rem;
+    width: 15%;
+    color: var(--drop-dark);
+}
+
+.language {
+    color: var(--drop-darker);
+    align-items: center;
+    gap: 1rem;
 }
