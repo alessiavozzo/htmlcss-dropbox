@@ -47,22 +47,35 @@
 
 body {
     height: 100vh;
+    width: 100%;
     font-size: 1.1rem;
 }
 
 .container-wrap {
     width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .container-large {
     width: 65%;
-    margin: auto;
     padding: 5rem 0;
 }
 
-.container-small {
-    width: 30%;
+#site_footer .container-large{
     margin: auto;
+}
+
+#site_main .container-large{
+    width: 100%;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-small {
+    width: 370px;
     flex-direction: column;
     gap: 1.5rem;
 }
@@ -255,6 +268,10 @@ input[type="submit"]{
 
 
 /* #region footer */
+
+#site_footer ul{
+    flex-wrap: wrap;
+}
 #site_footer{
     padding-top: 3rem;
 
@@ -279,3 +296,5 @@ input[type="submit"]{
     align-items: center;
     gap: 1rem;
 }
+
+/* #endregion footer */
