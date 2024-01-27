@@ -23,7 +23,32 @@
 
 /* #endregion color palette */
 
+
+/* #region debug */
+
+/* .debug #site_header{
+    height: 100px;
+    background-color: aqua;
+} */
+
+
+
+
 /* #region common rules */
+
+.list-inline {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    list-style: none;
+}
+
+.btn {
+    background-color: var(--drop-btn);
+    padding: 0.8rem;
+    color: var(--drop-light);
+    text-decoration: none;
+}
 
 
 /* #region utility */
@@ -41,3 +66,108 @@
 }
 
 /* #endregion utility */
+
+
+/* #region header */
+
+#site_header {
+    max-width: 2000px;
+    font-size: 1.2rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 50;
+
+    & .link {
+        text-decoration: none;
+        color: var(--drop-darker);
+        padding: 1.2rem 0.3rem;
+    }
+}
+
+nav {
+    justify-content: space-between;
+    align-items: center;
+
+    & .logo-svg {
+        z-index: 10;
+        background-color: var(--drop-btn);
+        align-items: center;
+        aspect-ratio: 1/1;
+        justify-content: center;
+        height: 3rem;
+    }
+
+    & button {
+        border: none;
+        background-color: var(--drop-lighter);
+        font-size: 1rem;
+        padding: 1rem;
+
+        &:hover {
+            background-color: var(--drop-light);
+            cursor: pointer;
+        }
+    }
+}
+
+.nav-left .logo-img {
+        margin-left: -17%;
+        align-self: center;
+}
+
+.nav-right .btn{
+    padding: 0.7rem 0.8rem;
+    font-weight: 500;
+    margin-right: 0.3rem;
+}
+
+.nav-right .fa-arrow-right{
+    padding-left: 0.5rem;
+    vertical-align: bottom;
+}
+
+.d-menu {
+    position: relative;
+
+    & .dropdown {
+        position: absolute;
+        background-color: var(--drop-light);
+        z-index: 10;
+        width: 170%;
+        top: 2rem;
+        display: none;
+        right: 0;
+        padding: 0.3rem;
+
+        & li{
+            padding: 0.5rem 0;
+            list-style: none;
+
+            & a{
+                text-decoration: none;
+                color: var(--drop-darker);
+            }
+        }
+    }
+}
+
+nav .link:hover{
+    background-color: var(--drop-light);
+}
+
+.d-menu:hover .dropdown{
+    display: block;
+}
+
+.dropdown li:hover{
+    background-color: rgba(119, 136, 153, 0.527);
+    cursor: pointer;
+
+    & a{
+    color: var(--drop-lighter);
+    }
+}
+
+
+/* #endregion header */
