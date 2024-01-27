@@ -31,6 +31,12 @@
     background-color: aqua;
 } */
 
+.debug .jumbotron{
+    height: 700px;
+}
+
+
+/* #endregion debug */
 
 
 
@@ -49,6 +55,8 @@
     color: var(--drop-light);
     text-decoration: none;
 }
+
+/* #endregion common rules */
 
 
 /* #region utility */
@@ -72,6 +80,7 @@
 
 #site_header {
     max-width: 2000px;
+    background-color: var(--drop-lighter);
     font-size: 1.2rem;
     position: fixed;
     top: 0;
@@ -133,6 +142,7 @@ nav {
     & .dropdown {
         position: absolute;
         background-color: var(--drop-light);
+        font-size: 1rem;
         z-index: 10;
         width: 170%;
         top: 2rem;
@@ -161,13 +171,25 @@ nav .link:hover{
 }
 
 .dropdown li:hover{
-    background-color: rgba(119, 136, 153, 0.527);
+    background-color: rgba(119, 136, 153, 0.219);
     cursor: pointer;
+}
 
-    & a{
-    color: var(--drop-lighter);
+.btn:hover{
+    background-color: rgb(5, 80, 202);
+
+    & .fa-arrow-right{
+    transform: translateX(0.3rem);
+    transition: all 0.4s;
     }
 }
 
 
 /* #endregion header */
+
+/* #region jumbotron */
+
+.jumbotron{
+    background-image: linear-gradient(to right, var(--drop-light) calc((100% / 12) * 4), calc((100% / 12) * 4), var(--drop-accent) calc((100% / 12) * 8));
+}
+
