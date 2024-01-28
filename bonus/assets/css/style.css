@@ -171,6 +171,10 @@ h3 {
         color: var(--drop-darker);
         padding: 1.9rem 0.3rem;
     }
+
+    & .btn:hover{
+        background-color: rgb(3, 81, 207);
+    }
 }
 
 nav {
@@ -222,11 +226,19 @@ nav {
     &>.btn {
         padding: 1rem;
         text-align: center;
+
+        &:hover{
+            background-color: rgb(3, 81, 207);
+        }
     }
 
     &>.link {
         text-decoration: none;
         color: var(--drop-darker);
+
+        &:hover{
+            text-decoration: underline;
+        }
     }
 
 }
@@ -241,6 +253,8 @@ i.fa-arrow-down {
 
     &:hover {
         color: var(--drop-btn);
+        transform: translateY(5px);
+        transition: all 0.3s;
     }
 }
 
@@ -263,6 +277,15 @@ i.fa-arrow-down {
         & span {
             margin-right: 2.5rem;
         }
+    }
+
+    & .btn:hover{
+        background-color: rgb(3, 81, 207);
+    }
+
+    & .link:hover{
+        color: rgb(3, 81, 207);
+        text-decoration: underline 2px solid;
     }
 }
 
@@ -387,6 +410,10 @@ h4 {
         color: var(--drop-dark);
         width: 40%;
         padding: 0.5rem;
+
+        &:hover{
+            background-color: var(--drop-light);
+        }
     }
 }
 
@@ -434,6 +461,11 @@ h4 {
 
     & .link {
         color: var(--drop-btn);
+
+        &:hover{
+            color: rgb(3, 81, 207);
+            text-decoration: underline 2px solid;
+        }
     }
 }
 
@@ -538,6 +570,10 @@ h4 {
         border: 1px solid var(--drop-dark);
         color: var(--drop-dark);
         padding: 1rem 3rem;
+
+        &:hover{
+            background-color: var(--drop-light);
+        }
     }
 
     & h2 {
@@ -581,6 +617,10 @@ h4 {
     & a {
         color: var(--drop-light);
         text-decoration: none;
+
+        &:hover{
+            text-decoration: underline;
+        }
     }
 
     & hr {
@@ -595,7 +635,7 @@ h4 {
     justify-content: center;
     align-items: center;
     gap: 2.5rem;
-    padding: 7rem 0;
+    padding: 5rem 0 1.5rem 0;
 }
 
 .about-us {
@@ -603,7 +643,7 @@ h4 {
 }
 
 .footer-bottom {
-    padding: 4rem 0;
+    padding: 1.5rem 0 4rem 0;
 }
 
 .language {
@@ -768,11 +808,11 @@ label{
     padding: 1.5rem 0;
 }
 
-.accordion-hov:hover .quest:hover .answer-content, .accordion .answer-content{
+.accordion-hov:hover .quest:hover .answer-content{
     height: 8rem;
 }
 
-.answer-content, .accordion:hover .answer-content{
+.answer-content{
     overflow: hidden;
     height: 0;
     transition: height 0.5s;
