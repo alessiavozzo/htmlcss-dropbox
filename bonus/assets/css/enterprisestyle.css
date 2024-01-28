@@ -45,9 +45,6 @@
  .debug .dropbox-business{
     height: 600px;
  } */
-
-/* #endregion debug */
-
 /* .debug .feeds-top{
     height: 300px;
 } */
@@ -62,6 +59,9 @@
  }
 
  */
+/* #endregion debug */
+
+
 /* #region common rules */
 
 body{
@@ -164,7 +164,7 @@ h2{
     & .link {
         text-decoration: none;
         color: var(--drop-darker);
-        padding: 1.2rem 0.3rem;
+        padding: 0.9rem 0.3rem;
     }
 }
 
@@ -213,7 +213,7 @@ nav {
     & .dropdown {
         position: absolute;
         background-color: var(--drop-light);
-        font-size: 1rem;
+        font-size: 0.8rem;
         z-index: 10;
         width: 170%;
         top: 2rem;
@@ -230,6 +230,57 @@ nav {
                 color: var(--drop-darker);
             }
         }
+    }
+}
+
+.nav-left .drop-sol{
+    width: 800%;
+    left: 0;
+
+    & .solutions{
+        font-size: 0.8rem;
+    }
+
+    & h4{
+        padding: 0.5rem 0;
+    }
+
+    & .sol{
+        width: calc(100% / 3);
+        padding: 0.3rem;
+    }
+}
+
+.nav-left .dropdown.drop-prod{
+    width: 300%;
+    left: 0;
+    padding: 0.3rem;
+
+    & h4{
+        padding: 0.5rem 0;
+    }
+
+    & .name{
+        flex-direction: column;
+        gap: 0.3rem;
+
+        
+        & > span{
+            font-size: 0.6rem;
+        }
+    }
+}
+
+a.d-flex{
+    gap: 0.5rem;
+    align-items: center;
+
+    & > i{
+        padding: 0.5rem;
+        border: 1px solid var(--drop-dark);
+        border-radius: 10px;
+        color: var(--drop-btn);
+        background-color: var(--drop-lighter);
     }
 }
 
