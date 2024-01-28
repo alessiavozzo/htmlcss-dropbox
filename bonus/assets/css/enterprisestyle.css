@@ -458,7 +458,7 @@ nav .link:hover{
 }
 
 .education .link:hover{
-    text-decoration: underline var(--drop-darker) 2px;
+    text-decoration: underline var(--drop-lighter) 2px;
 
     & .fa-arrow-right{
     transform: translateX(0.3rem);
