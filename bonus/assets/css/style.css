@@ -167,6 +167,7 @@ h3 {
     max-width: 2000px;
     font-size: 1.2rem;
     position: fixed;
+    z-index: 1000;
     top: 0;
     width: 100%;
     background-color: var(--drop-lighter);
