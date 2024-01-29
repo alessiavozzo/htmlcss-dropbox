@@ -176,7 +176,6 @@ h3 {
     & .link {
         text-decoration: none;
         color: var(--drop-darker);
-        padding: 1.6rem 0.3rem;
     }
 
     & .btn:hover{
@@ -187,8 +186,23 @@ h3 {
 nav {
     justify-content: space-between;
     align-items: center;
-    padding: 1.5rem;
+
+    & li{
+        padding: 1rem;
+
+        &:hover{
+            background-color: var(--drop-light);
+        }
+    }
 }
+
+.navbar-right > .list-inline > li:last-of-type:hover{
+    background-color: var(--drop-lighter);
+}
+.navbar-left > .list-inline > li:first-of-type:hover{
+    background-color: var(--drop-lighter);
+}
+
 
 
 
@@ -700,7 +714,8 @@ h4 {
         background-color: var(--drop-light);
         z-index: 10;
         width: 170%;
-        top: 3.3rem;
+        top: 3.7rem;
+        left: 0;
         padding: 0.3rem;
         display: none;        
 
@@ -719,10 +734,15 @@ nav .link:hover{
     background-color: var(--drop-light);
 }
 
-.d-menu:hover .dropdown{
-    display: block;
-}
 
+.d-menu:hover {
+    background-color: var(--drop-light);
+    
+    & .dropdown{
+    display: block;
+    background-color: var(--drop-light);
+    }
+}
 .dropdown li:hover{
     background-color: rgba(119, 136, 153, 0.527);
     cursor: pointer;
@@ -734,10 +754,9 @@ nav .link:hover{
 
 .navbar-right .dropdown {
     width: 130%;
-    right: 0;
-    padding: 0.3rem;
-    display: none;
 }
+
+
 
 /* #endregion dropdown menu */
 
