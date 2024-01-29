@@ -427,6 +427,26 @@ h4 {
     }
 }
 
+
+/* #region cards hover */
+
+.card-plan:has(.btn:hover){
+    box-shadow: 0px 0px 4px var(--drop-btn);
+    transform: scale(1.025);
+
+    .top-card{
+        background-color: var(--drop-btn);
+        color: var(--drop-lighter);
+        box-shadow: inset 0px 0px 6px 4px rgba(255, 255, 255, 0.39);
+    }
+}
+
+.card-plan{
+    transition: all 0.4s;
+}
+
+/* #endregion cards hover */
+
 /* #endregion Card-in-line */
 
 /* #endregion business-plan */
@@ -825,6 +845,7 @@ nav .link:hover{
 
 /* #region scrollbar */
 
+
 ::-webkit-scrollbar {
     width: 1rem;
 }
@@ -841,3 +862,4 @@ nav .link:hover{
   }
 
   /* #endregion scrollbar */
+
