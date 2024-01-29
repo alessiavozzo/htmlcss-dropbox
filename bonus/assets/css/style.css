@@ -255,14 +255,29 @@ nav {
     padding-top: 4rem;
 }
 
-i.fa-arrow-down {
+
+i.fa-arrow-down{
     color: var(--drop-darker);
     transition: all 0.3s;
-    &:hover {
+
+    &:hover{
         color: var(--drop-btn);
-        transform: translateY(5px);        
+        animation-name:bounce;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
     }
 }
+
+@keyframes bounce{
+    0% {transform: translateY(0)}
+
+    50% {transform: translateY(10px)}
+
+    100% {transform: translateY(0)}
+}
+
+
+
 
 /* #endregion Jumbo */
 
