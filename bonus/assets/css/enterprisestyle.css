@@ -294,10 +294,9 @@ nav .link:hover{
     background-color: var(--drop-light);
 }
 
-/* .d-menu:hover .dropdown{
-    display: block;
+.nav-right > .list-inline > li:last-of-type:hover{
+    background-color: var(--drop-lighter);
 }
- */
 
 .d-menu:hover {
     background-color: var(--drop-light);

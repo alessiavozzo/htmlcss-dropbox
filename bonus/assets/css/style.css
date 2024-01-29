@@ -445,6 +445,40 @@ h4 {
     transition: all 0.4s;
 }
 
+.card-plan:has(.btn:hover) .top-card i{
+    animation-name: rotate;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes rotate {
+
+    0% {transform: rotate(0);}
+
+    100% {transform: rotate(360deg);}
+}
+
+.card-plan:has(.btn:hover) .details i{
+    animation-name: jump;
+    animation-duration: 0.5s;
+    animation-iteration-count: 3;
+}
+
+@keyframes jump {
+
+    0% {transform: translateY(0)}
+
+    50% {transform: translateY(-5px)}
+
+    100% {transform: translateY(0)}
+}
+
+
+
+
+
+
 /* #endregion cards hover */
 
 /* #endregion Card-in-line */
