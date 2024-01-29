@@ -164,7 +164,6 @@ h2{
     & .link {
         text-decoration: none;
         color: var(--drop-darker);
-        padding: 0.9rem 0.3rem;
     }
 }
 
@@ -185,13 +184,20 @@ nav {
         border: none;
         background-color: var(--drop-lighter);
         font-size: 1rem;
-        padding: 1rem;
 
-        &:hover {
-            background-color: var(--drop-light);
+        &:hover{
             cursor: pointer;
         }
     }
+
+    & li{
+        padding: 1rem;
+
+        &:hover{
+            background-color: var(--drop-light);
+        }
+    }
+
 }
 
 .nav-left .logo-img {
@@ -216,7 +222,7 @@ nav {
         font-size: 0.8rem;
         z-index: 10;
         width: 170%;
-        top: 2rem;
+        top: 3.2rem;
         display: none;
         right: 0;
         padding: 0.3rem;
@@ -288,8 +294,18 @@ nav .link:hover{
     background-color: var(--drop-light);
 }
 
-.d-menu:hover .dropdown{
+/* .d-menu:hover .dropdown{
     display: block;
+}
+ */
+
+.d-menu:hover {
+    background-color: var(--drop-light);
+    
+    & .dropdown{
+    display: block;
+    background-color: var(--drop-light);
+    }
 }
 
 .dropdown li:hover{
